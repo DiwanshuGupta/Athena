@@ -1,0 +1,17 @@
+openai
+python-dotenv
+nltk
+scikit-learn
+Flask
+flask-cors
+flask-restx
+loguru
+click
+gunicorn
+SQLAlchemy
+redis
+tiktoken
+tenacity
+alembic
+psycopg2
+celery

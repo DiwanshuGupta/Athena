@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  nginx:
+    image: billschumacher/athena-nginx:latest
+  api:
+    image: billschumacher/athena-api:latest
+  celery_beat:
+    image: billschumacher/athena-celery-beat:latest
+  celery_worker:
+    image: billschumacher/athena-celery-worker:latest
