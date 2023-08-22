@@ -1,67 +1,70 @@
-# Athena
-Athena is an AI-powered chatbot designed to assist with various tasks and provide personalized experiences for users. Inspired by the Greek goddess of wisdom and strategic thinking, Athena's goal is to learn, adapt, and become a self-reliant AI agent. Built on the GPT-4 architecture, Athena communicates effectively through natural language processing and engages with a supportive human community to foster growth and development.
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Installation 
+## Available Scripts
 
-Before you begin, ensure you have the following installed:
+In the project directory, you can run:
 
-- [Python 3.7](https://www.python.org/downloads/release/python-370/)
-- [Docker](https://www.docker.com/get-started)
-- [Node.js](https://nodejs.org/) (for running the React app)
+### `npm start`
 
-Then:
-- Obtain an API key from [OpenAI](https://beta.openai.com/signup/).
-- Create a `.env` file in the Athena project folder with the following content:
-OPENAI_API_KEY=<your_openai_api_key>
-# How to open
-On Windows: .\run_app.bat
-### Manual Installation 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-1. Install Python 3.11.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-2. Clone the Athena repository:
-git clone https://github.com/BillSchumacher/Athena.git
-3. Change to the Athena directory:
-cd Athena
-4. Install the required Python packages:
-pip install -r requirements.txt
-#### API Mode 
+### `npm test`
 
-1. Run the Docker container:
-```
-docker run -d -p 5000:5000 --name athena --env-file .env billschumacher/athena-api
-```
-2. Access the API at `http://localhost:5000/api/v1/athena`.
-### Running the React App
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. Navigate to the `athena-app` directory:
-cd athena-app
-2. Install the required dependencies:
-npm install
-3. Start the React development server:
-npm start
-The React app should now be running on [http://localhost:3000](http://localhost:3000).
+### `npm run build`
 
-#### CLI Mode 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Run the Docker container:
-```
-docker run -it --rm --name athena -e ATHENA_MODE=cli --env-file .env billschumacher/athena
-```
-2. Interact with Athena using the command prompt.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Running Athena Manually 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-1. Change to the Athena directory:
-cd Athena
-2. Run the main script:
-python -m athena
-3. Interact with Athena using the command prompt.
+### `npm run eject`
 
-## Debugging
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-In your .env add:
-```
-LOG_LEVEL=DEBUG
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
